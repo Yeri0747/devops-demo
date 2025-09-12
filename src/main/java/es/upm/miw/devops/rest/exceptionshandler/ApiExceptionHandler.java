@@ -20,7 +20,7 @@ public class ApiExceptionHandler {
     @ResponseBody
     public ErrorMessage noResourceFoundRequest(Exception exception) {
         return new ErrorMessage(new RuntimeException(
-                "Ruta no encontrada, prueba con: **/actuator/info o **/swagger-ui.html o **/v3/api-docs o **/v3/api-docs.yaml"),
+                "Ruta no encontradam Prueba con: **/actuator/info o **/swagger-ui.html o **/v3/api-docs o **/v3/api-docs.yaml"),
                 HttpStatus.NOT_FOUND.value());
     }
 
