@@ -54,7 +54,7 @@ jobs:
         run: >
           mvn -B sonar:sonar 
           -Dsonar.projectKey=yeri0747-github_${{ env.ARTIFACT }}
-          -Dsonar.organization=miw-upm-github 
+          -Dsonar.organization=yeri0747-github 
           -Dsonar.host.url=https://sonarcloud.io 
           -Dsonar.token=${{ secrets.SONAR_TOKEN }}
         env:
