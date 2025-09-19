@@ -45,7 +45,6 @@ jobs:
           fields: repo,author,commit,author,workflow,
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-
       - name: 🔍 CodeQL Analysis
         uses: github/codeql-action/analyze@v3
         with:
@@ -54,7 +53,7 @@ jobs:
       - name: 📊 Sonar Analysis
         run: >
           mvn -B sonar:sonar 
-          -Dsonar.projectKey=miw-upm-github_${{ env.ARTIFACT }}
+          -Dsonar.projectKey=yeri0747-github_${{ env.ARTIFACT }}
           -Dsonar.organization=miw-upm-github 
           -Dsonar.host.url=https://sonarcloud.io 
           -Dsonar.token=${{ secrets.SONAR_TOKEN }}
